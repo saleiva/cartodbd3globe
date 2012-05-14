@@ -68,7 +68,7 @@ d3.json(url, function(collection) {
   .append("svg:path")
   .attr("d", clip)
   .style("fill", function (d) {return calculateColor(d.properties.pop2005)})
-  .on("mouseover", fade(true, 0.1))
+  .on("mouseover", fade(true, 0.4))
   .on("mouseout", fade(false, 1));
 
 });
