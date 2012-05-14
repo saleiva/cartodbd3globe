@@ -5,9 +5,12 @@ body {
   font-family: "Helvetica Neue", Helvetica;
 }
 
-#chart, #header, #footer {
+#chart, #header {
   position: absolute;
   top: 0;
+}
+#footer {
+  position: absolute;
 }
 
 #header, #footer {
@@ -30,10 +33,19 @@ body {
 }
 
 #footer {
-  top: 680px;
+  bottom: 60px;
   right: 140px;
   text-align: right;
 }
+
+#footer h2 { margin: 0; 
+  -webkit-transition: opacity 300ms ease-in-out;
+  -moz-transition: opacity 300ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out;
+  -ms-transition: opacity 300ms ease-in-out;	
+  transition: opacity 300ms ease-in-out;
+}
+#footer h2.fade { opacity:0; }
 
 rect {
   fill: none;
@@ -86,3 +98,7 @@ a:hover {
   font-size: 12px;
   color: #999;
 }
+
+svg { width: 1280px; height: 800px; pointer-events: all; } 
+circle { fill: #dbe4f0; }
+path { fill: #aaa; stroke: #fff; } 
